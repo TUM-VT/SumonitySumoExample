@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="tum_009.net.xml"/>
+        <route-files value="single_trip_car.rou.xml"/>
+        <additional-files value="busStop.add.xml" />
+    </input>
+
+    <time>
+        <end value="3600"/>
+        <step-length value="0.1"/>
+    </time>
+    
+    <processing>
+        <lanechange.duration value="2" />
+    </processing>
+
+    <gui_only>
+        <delay value="1000"/>
+    </gui_only>
+
+</configuration>
